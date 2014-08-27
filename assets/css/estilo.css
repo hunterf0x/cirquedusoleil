@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html { width:100%; height:100%; position:relative; float:left; font-family:Arial, Helvetica, sans-serif;
+	background: url("../img/corteo_bg2.jpg") #004673  no-repeat center center fixed;
+	max-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;}
+.borde { 
+	-webkit-box-shadow: inset 0 0 0 9px #0154a0;
+       -moz-box-shadow: inset 0 0 0 9px #0154a0;
+            box-shadow: inset 0 0 0 9px #0154a0; width:100%; height:100%; position:absolute; top:0px; left:0px; z-index:20;}
+.logo    { background:url("../img/logo_entel.png"); background-size:70px; width:70px; height:70px; position:absolute; bottom:0px; right:0px; z-index:10; text-indent:-9999999px;}
+.curva   { background:url("../img/curva.png"); background-size:35px 38px; width:35px; height:38px; position:absolute; top:9px; right:9px; z-index:30; }
+.corteo  { background:url("../img/cirque_du_solei_corteo.png"); background-size:90px 42px; width:90px; height:42px; position:absolute; bottom:20px; left:5%; text-indent:-99999px;}
+.cliente { background:url("../img/cliente_preferencial.png"); background-size:281px 22px; width:281px; height:22px; position:absolute; top:20px; left:20px; text-indent:-99999px;}
+.info    { width:80%; height:auto; position:absolute; bottom:20%; margin-left:10%;}
+h1 { position:relative; width:100%; height:auto; }
+h1 img, h2 img { width:100%;  height:auto;}
+h2 {position:relative; width:100%; height:auto; margin-top:10px; margin-bottom:5px;}
+a  {/* background:url("img/btn_comenzar.jpg"); */background-color: #fff ; width:100%; position:relative; color:#ff6702; float: left; margin-top:10px; font-size:0.9em; text-decoration:none; text-align:center; padding:8px 0px; cursor:pointer; z-index:100;
+	-webkit-border-radius: 12px 12px 12px 12px;
+	border-radius: 12px 12px 12px 12px;}
+a:hover, a:active { background-color:#ff6702; color:#fff; text-decoration:none;}
+a.error { color:#fff; background:url("../img/cruz.png") #e2001a 95% 44% no-repeat; background-size:20px; }
+
+.trivia       					{ width:80%; height:auto; position:absolute; bottom:20%; margin-left:10%; display: none}
+.trivia .preg { position:relative; width:100%; height:auto;}
+.trivia img		{ width:100%; height:auto;}
+a.triv   { margin-top:6px;}
+
+.respuesta_no { width:80%; height:auto; position:absolute; bottom:20%; margin-left:10%;}
+.resp {position:relative; width:100%; height:auto;}
+.resp img, .intentalo img {width:100%;  height:auto;}
+.intentalo {position:relative; width:100%; height:auto; margin-top:10px;}
+.respuesta_no a { margin-top:0px;}
+
+.respuesta_si { width:80%; height:auto; position:absolute; bottom:22%; margin-left:10%;}
+.txt_ok {position:relative; width:100%; height:auto; margin-top:15px;}
+.txt_ok img {width:100%;  height:auto;}
+
+.hide {display:none}
+.active {display: block}
+
+
+@media only screen and (min-width: 320px) and (orientation: landscape) {
+	html { 
+	background: url("../img/corteo_bg3.jpg") #004673  no-repeat center center fixed;
+	max-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;}
+	.info { width:50%; height:auto; position:absolute; bottom:30%; right:7%;}
+	.trivia{width:55%; height:auto; position:absolute; bottom:22%;right:7%;}
+	.respuesta_no, .respuesta_si {width:60%; height:auto; position:absolute; bottom:25%;right:0%;}
+	.respuesta_no a { width:80%; margin-left:5%;}
+	a.triv { width:84%; margin-left:8%;}
+	a  {width:80%; position:relative; font-size:0.9em; padding:8px 0px; margin-top:10px; margin-left:0%; height:auto!important;
+	-webkit-border-radius: 12px 12px 12px 12px;
+	border-radius: 12px 12px 12px 12px;}
+	.logo  { background-size:70px; width:70px; height:70px; }
+	.curva { background-size:35px 38px; width:35px; height:38px; }
+	.corteo  { background-size:90px 42px; width:90px; height:42px; }
+	.cliente { background-size:281px 22px; width:281px; height:22px; }
+	
+	}
+
+@media only screen and (min-width: 540px) and (orientation:  portrait){
+	a { margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important;
+	-webkit-border-radius: 18px 18px 18px 18px;
+	border-radius: 18px 18px 18px 18px;}
+	a.error  {background-size:30px; background-position:95% 45% }
+	.cliente {background-size:448px 35px; width:448px; height:35px;}
+	.corteo  {background-size:130px 61px; width:130px; height:61px;}
+	.logo    {background-size:100px; width:100px; height:100px;}
+	.curva 	 {background-size:45px 49px; width:45px; height:49px;}
+	}
+	
+@media only screen and (min-width: 720px) {
+	.cliente {background-size:500px 39px; width:500px; height:39px;}
+	.corteo  {background-size:160px 75px; width:160px; height:75px;}
+	.logo    {background-size:110px; width:110px; height:110px;}
+	.curva 	 {background-size:55px 60px; width:55px; height:60px;}
+	h2       {margin-top:20px; margin-bottom:15px;}
+	/*a {  margin-top:20px; font-size:1.5em!; padding:15px 0px; height:auto ; width:80%;*/
+    a {  margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto ; width:80%;
+	-webkit-border-radius: 18px 18px 18px 18px;
+	border-radius: 18px 18px 18px 18px;}
+	a.triv {width:100%; margin-left:0%; margin-top:10px; font-size:1.3em;}
+	.trivia{ bottom:17%;}
+	.txt_ok { margin-top:30px;}
+	}
+	
+@media only screen and (min-width: 1024px) {
+	.info { width:40%; height:auto; position:absolute; bottom:30%; right:10%;}
+	.trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;}
+	a { width:60%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;}
+	a.triv {width:60%; margin-left:0%; margin-top:10px; }
+	h2  {margin-top:30px; margin-bottom:25px;}
+	a.error  {background-size:35px; background-position:95% 45% }
+	.respuesta_no {width:45%; bottom:30%;right:5%;}
+	.respuesta_si {width:45%; bottom:33%;right:5%;}
+	.respuesta_no a { width:60%; margin-left:0%;}
+	.txt_ok {margin-top:40px;}
+	.corteo {left:20px!important;}
+	}
