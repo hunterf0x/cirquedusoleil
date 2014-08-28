@@ -9,6 +9,7 @@
 <link href="assets/css/estilo.css" rel="stylesheet" type="text/css" />
 <script type="application/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
 <script type="application/javascript" src="assets/js/functions.js"></script>
+
 </head>
 
 <body>
@@ -63,9 +64,6 @@
             <p class="txt_ok"><img src="assets/img/txt_ok.png" alt="Ya estás participando por una de las 100 entradas dobles a Cirque Du Soleil"/></p>
         </div>
     </div>
-    <audio src="assets/cirque_song.mp3" autoplay >
-        <p>If you are reading this, it is because your browser does not support the audio element.</p>
-    </audio>
 
 </body>
 </html>

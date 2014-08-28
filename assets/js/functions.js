@@ -9,15 +9,21 @@ $(function() {
     var answer = 0;
     var c = 0;
     var email ='';
-
-
     var audio = new Audio("assets/cirque_song.mp3");
-    audio.play();
+    var playing = false
+
+
+
     $('.info').on('click','#inicio', function(e){
         e.preventDefault();
 
         //$('.trivia1').show();
         $(this).addClass('correcto').delay(500).queue(function(x){
+            if(playing == false){
+                audio.loop = true;
+                audio.play();
+            }
+            playing = true;
             loadPregunta('trivia1');
             $(this).parent().hide();
             x();
