@@ -56,7 +56,7 @@ a.triv   { margin-top:6px;}
 	     -o-background-size: cover;
 	        background-size: cover;}
 	.info { width:50%; height:auto; position:absolute; bottom:30%; right:7%;}
-	.trivia{width:55%; height:auto; position:absolute; bottom:22%;right:7%;}
+	.trivia{width:55%; height:auto; position:absolute; bottom:22%;right:7%;display: none;}
 	.respuesta_no, .respuesta_si {width:60%; height:auto; position:absolute; bottom:25%;right:0%;}
 	.respuesta_no a { width:80%; margin-left:5%;}
 	a.triv { width:84%; margin-left:8%;}
@@ -92,13 +92,13 @@ a.triv   { margin-top:6px;}
 	-webkit-border-radius: 18px 18px 18px 18px;
 	border-radius: 18px 18px 18px 18px;}
 	a.triv {width:100%; margin-left:0%; margin-top:10px; font-size:1.3em;}
-	.trivia{ bottom:17%;}
+	.trivia{ bottom:17%;display:none}
 	.txt_ok { margin-top:30px;}
 	}
 	
 @media only screen and (min-width: 1024px) {
 	.info { width:40%; height:auto; position:absolute; bottom:30%; right:10%;}
-	.trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;}
+	.trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;display: none}
 	a { width:60%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
 	-webkit-border-radius: 20px 20px 20px 20px;
 	border-radius: 20px 20px 20px 20px;}
