@@ -11,19 +11,28 @@ $(function() {
     var email ='';
 
 
+    var audio = new Audio("assets/cirque_song.mp3");
+    audio.play();
     $('.info').on('click','#inicio', function(e){
         e.preventDefault();
-        $(this).parent().hide();
-        //$('.trivia1').show();
 
-        loadPregunta('trivia1');
+        //$('.trivia1').show();
+        $(this).addClass('correcto').delay(500).queue(function(x){
+            loadPregunta('trivia1');
+            $(this).parent().hide();
+            x();
+        });
+
     });
 
     $('#again').on('click', function(e){
         e.preventDefault();
-        $(this).parent().hide();
-        reset();
-        loadPregunta('trivia1');
+        $(this).addClass('correcto').delay(500).queue(function(z){
+            $(this).parent().hide();
+            reset();
+            loadPregunta('trivia1');
+           z();
+        });
 
     });
 
@@ -35,6 +44,8 @@ $(function() {
         answer = 0;
         c = 0;
         $('.triv').removeClass('error');
+        $('.triv').removeClass('correcto');
+        $('#again').removeClass('correcto');
     }
 
     function loadPregunta(q){
@@ -127,21 +138,23 @@ $(function() {
 
             });
         }else{
-            //$(this).delay(100).queue(function(){
+            $(this).addClass('correcto').delay(500).queue(function(x){
                 if(next_question.attr('class') != 'trivia' ){
                     hidePregunta(current_question.attr('id'));
                     showResultado(calculaResultado(error),error);
 
-                }else
+                }else{
                     showPregunta(current_question.attr('id'),next_question.attr('id'));
-            //});
+                }
+                x();
+
+            });
+
+
         }
-
-
-
-
-
     });
+
+
 
 
     function getUrlVars() {

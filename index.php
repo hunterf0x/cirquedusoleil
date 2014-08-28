@@ -21,7 +21,7 @@
         <div class="info">
         	<h1><img src="assets/img/h1.png" alt="Responde la Trivia Du Solei y demuestra tu conocimiento"/></h1>
             <h2><img src="assets/img/h2.png" alt="Estar&aacute;s participando por una de las 100 entradas dobles a Cirque Du Soleil"/></h2>
-            <a href="#" id="inicio">Comenzar</a>
+            <a href="#" id="inicio" >Comenzar</a>
         </div>
         <div class="trivia" id="trivia1">
         	<div class="preg"><img src="assets/img/preg1.png" alt="¿Qu&eacute; animal se repite en todas las producciones de Cirque Du Soleil?"/></div>
@@ -55,7 +55,7 @@
         </div>
         <div class="respuesta_no hide">
         	<div class="resp"><img class="imgr" src="assets/img/resp0.png" alt="Obtuviste 0 respuestas correctas"/></div>
-            <p class="intentalo"><img src="assets/img/intentalo.png" alt="Int&eacute;ntalo de nuevo"/></p>
+            <p class="intentalo btnsx"><img src="assets/img/intentalo.png" alt="Int&eacute;ntalo de nuevo"/></p>
             <a href="#" id="again">Volver a Jugar</a>
         </div>
         <div class="respuesta_si hide">
@@ -63,5 +63,9 @@
             <p class="txt_ok"><img src="assets/img/txt_ok.png" alt="Ya estás participando por una de las 100 entradas dobles a Cirque Du Soleil"/></p>
         </div>
     </div>
+    <audio src="assets/cirque_song.mp3" autoplay >
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+
 </body>
 </html>

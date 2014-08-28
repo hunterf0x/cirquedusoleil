@@ -28,6 +28,7 @@ a  {/* background:url("img/btn_comenzar.jpg"); */background-color: #fff ; width:
 
 
 a.error { color:#fff; background:url("../img/cruz.png") #e2001a 95% 44% no-repeat; background-size:20px; }
+a.correcto { background-color:#ff6702; color:#fff; text-decoration:none;}
 
 .trivia       					{ width:80%; height:auto; position:absolute; bottom:20%; margin-left:10%; display: none}
 .trivia .preg { position:relative; width:100%; height:auto;}
