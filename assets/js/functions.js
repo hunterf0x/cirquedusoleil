@@ -70,7 +70,7 @@ $(function() {
             "pregunta" : q,
             "respuesta" : a
         };
-        console.log(parametros);
+        //console.log(parametros);
         if(email){
             $.ajax({
                 data:  parametros,

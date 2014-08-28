@@ -12,7 +12,7 @@ $usuario = 'root';
 $password = '123456';
 
 try{
-    $conn = new PDO('mysql:host=$host;dbname=$dbname', $usuario, $password);
+    $conn = new PDO('mysql:host=localhost;dbname=entel_cirque', $usuario, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
     echo "ERROR: " . $e->getMessage();
