@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="no-touch">
 	<div id="content">
     	<div class="borde"></div>
         <div class="logo">Entel</div>

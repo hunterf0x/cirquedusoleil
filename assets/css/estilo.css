@@ -104,7 +104,7 @@ a.triv   { margin-top:6px;}
 	a { width:60%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
 	-webkit-border-radius: 20px 20px 20px 20px;
 	border-radius: 20px 20px 20px 20px;}
-    a:hover { background-color:#ff6702; color:#fff; text-decoration:none;}
+    .no-touch a:hover { background-color:#ff6702; color:#fff; text-decoration:none;}
 	a.triv {width:60%; margin-left:0%; margin-top:10px; }
 	h2  {margin-top:30px; margin-bottom:25px;}
 	a.error  {background-size:35px; background-position:95% 45% }

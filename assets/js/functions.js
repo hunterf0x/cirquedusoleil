@@ -171,6 +171,10 @@ $(function() {
         return vars;
     }
 
+    if ('ontouchstart' in document) {
+        $('body').removeClass('no-touch');
+    }
+
 
 
 
