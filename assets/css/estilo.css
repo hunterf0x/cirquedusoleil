@@ -97,20 +97,39 @@ a.triv   { margin-top:6px;}
 	.trivia{ bottom:17%;display:none}
 	.txt_ok { margin-top:30px;}
 	}
-	
-@media only screen and (min-width: 1024px) {
-	.info { width:40%; height:auto; position:absolute; bottom:30%; right:10%;}
-	.trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;display: none}
-	a { width:60%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
-	-webkit-border-radius: 20px 20px 20px 20px;
-	border-radius: 20px 20px 20px 20px;}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .info { width:40%; height:auto; position:absolute; bottom:30%; right:10%;}
+    .trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;display: none}
+    a { width:80%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px; border-color: red}
     .no-touch a:hover { background-color:#ff6702; color:#fff; text-decoration:none;}
-	a.triv {width:60%; margin-left:0%; margin-top:10px; }
-	h2  {margin-top:30px; margin-bottom:25px;}
-	a.error  {background-size:35px; background-position:95% 45% }
-	.respuesta_no {width:45%; bottom:30%;right:5%;}
-	.respuesta_si {width:45%; bottom:33%;right:5%;}
-	.respuesta_no a { width:60%; margin-left:0%;}
-	.txt_ok {margin-top:40px;}
-	.corteo {left:20px!important;}
-	}
+    a.triv {width:80%; margin-left:0%; margin-top:10px; }
+    h2  {margin-top:30px; margin-bottom:25px;}
+    a.error  {background-size:35px; background-position:95% 45% }
+    .respuesta_no {width:45%; bottom:30%;right:5%;}
+    .respuesta_si {width:45%; bottom:33%;right:5%;}
+    .respuesta_no a { width:60%; margin-left:0%;}
+    .txt_ok {margin-top:40px;}
+    .corteo {left:20px!important;}
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .info { width:40%; height:auto; position:absolute; bottom:30%; right:10%;}
+    .trivia{width:38%; height:auto; position:absolute; bottom:30%;right:10%;display: none}
+    a { width:60%; margin-top:20px; font-size:1.5em; padding:15px 0px; height:auto !important; margin-left:0%;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px; border-color: red}
+    .no-touch a:hover { background-color:#ff6702; color:#fff; text-decoration:none;}
+    a.triv {width:60%; margin-left:0%; margin-top:10px; }
+    h2  {margin-top:30px; margin-bottom:25px;}
+    a.error  {background-size:35px; background-position:95% 45% }
+    .respuesta_no {width:45%; bottom:30%;right:5%;}
+    .respuesta_si {width:45%; bottom:33%;right:5%;}
+    .respuesta_no a { width:60%; margin-left:0%;}
+    .txt_ok {margin-top:40px;}
+    .corteo {left:20px!important;}
+}

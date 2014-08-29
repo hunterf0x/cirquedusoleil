@@ -9,7 +9,7 @@
 <link href="assets/css/estilo.css" rel="stylesheet" type="text/css" />
 <script type="application/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
 <script type="application/javascript" src="assets/js/functions.js"></script>
-
+<script type="text/javascript" src="http://dev.tests.cl:8080/target/target-script-min.js#anonymous"></script>
 </head>
 
 <body class="no-touch">
