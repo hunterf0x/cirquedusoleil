@@ -22,7 +22,7 @@ $(function() {
         $(this).addClass('correcto').delay(500).queue(function(x){
             if(playing == false){
                 audio.loop = true;
-                audio.play();
+                //audio.play();
             }
             playing = true;
             loadPregunta('trivia1');
