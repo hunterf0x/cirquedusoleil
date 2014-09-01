@@ -8,7 +8,8 @@ $(function() {
     var next_question = 0;
     var answer = 0;
     var c = 0;
-    var email ='';
+    var v;
+
     var audio = new Audio("assets/cirque_song.mp3");
     var playing = false
 
@@ -21,7 +22,7 @@ $(function() {
         $(this).addClass('correcto').delay(500).queue(function(x){
             if(playing == false){
                 audio.loop = true;
-                audio.play();
+                //audio.play();
             }
             playing = true;
             loadPregunta('trivia1');
@@ -69,7 +70,7 @@ $(function() {
     }
 
     function showResultado(r,e){
-        console.log(r);
+        //console.log(r);
         c = (5-e);
 
         if(r)
@@ -80,27 +81,42 @@ $(function() {
 
     function graba_resultado(q,a){
 
-        email = getUrlVars()["email"];
+        pin = getUrlVars()["pin"];
+        if(pin){
+            validPin(pin).success(function (data) {
+                v = JSON.parse(data);
+                if(v.email){
+                    var parametros = {
+                        "email" : v.email,
+                        "pregunta" : q,
+                        "respuesta" : a
+                    };
+                    //console.log(parametros);
 
-        var parametros = {
-            "email" : email,
-            "pregunta" : q,
-            "respuesta" : a
-        };
-        //console.log(parametros);
-        if(email){
-            $.ajax({
-                data:  parametros,
-                url:   'functions.php',
-                type:  'post',
-                success:  function (response) {
-                    console.log('saved '+response);
+                    $.ajax({
+                        data:  parametros,
+                        url:   'functions.php',
+                        type:  'post',
+                        success:  function (response) {
+                            //console.log('saved '+response);
+                        }
+                    });
+
                 }
+
             });
         }
 
 
         return false;
+    }
+
+    function validPin(pin){
+        return $.ajax({
+            data:  {pin:pin},
+            url:   'functions.php?op=validPin',
+            type:  'get'
+        });
     }
 
 
@@ -121,9 +137,6 @@ $(function() {
         answer = $(this).data('respuesta');
 
         graba_resultado(question,answer)
-
-
-
 
         if(!$(this).hasClass('ok')){
 
@@ -174,9 +187,4 @@ $(function() {
     if ('ontouchstart' in document) {
         $('body').removeClass('no-touch');
     }
-
-
-
-
-
 });
