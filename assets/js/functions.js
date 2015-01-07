@@ -1,7 +1,6 @@
-/**
- * Created by hvaras on 27-08-14.
- */
 $(function() {
+
+
     var error = 0;
     var current_question = 0;
     var question = 0;
@@ -10,7 +9,7 @@ $(function() {
     var c = 0;
     var v;
 
-    var audio = new Audio("assets/cirque_song.mp3");
+
     var playing = false
 
 
@@ -21,8 +20,12 @@ $(function() {
         //$('.trivia1').show();
         $(this).addClass('correcto').delay(500).queue(function(x){
             if(playing == false){
-                audio.loop = true;
-                audio.play();
+                if ( !$.browser.msie ) {
+                    var audio = new Audio("assets/cirque_song.mp3");
+                    audio.loop = true;
+                    audio.play();
+                }
+
             }
             playing = true;
             loadPregunta('trivia1');
@@ -38,7 +41,7 @@ $(function() {
             $(this).parent().hide();
             reset();
             loadPregunta('trivia1');
-           z();
+            z();
         });
 
     });
@@ -187,4 +190,9 @@ $(function() {
     if ('ontouchstart' in document) {
         $('body').removeClass('no-touch');
     }
+
+
+
+
+
 });

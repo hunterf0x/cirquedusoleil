@@ -1,5 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
@@ -7,10 +13,14 @@
 	<meta name="author"      content="">
 <title>ENTEL - Cirque Du Soleil</title>
 <link href="assets/css/estilo.css" rel="stylesheet" type="text/css" />
-<script type="application/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-<script type="application/javascript" src="assets/js/functions.js"></script>
-<script type="text/javascript" src="http://dev.tests.cl:8080/target/target-script-min.js#anonymous"></script>
-</head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script  type="text/javascript" src="assets/js/functions.js"></script>
+
+
+    <!--<script type="application/javascript" src="assets/js/jquery-1.11.1.min.js"></script>-->
+
+    </head>
 
 <body class="no-touch">
 	<div id="content">
@@ -22,7 +32,7 @@
         <div class="info">
         	<h1><img src="assets/img/h1.png" alt="Responde la Trivia Du Solei y demuestra tu conocimiento"/></h1>
             <h2><img src="assets/img/h2.png" alt="Estar&aacute;s participando por una de las 100 entradas dobles a Cirque Du Soleil"/></h2>
-            <a href="#" id="inicio" >Comenzar</a>
+            <a  id="inicio" onclick="return false;" >Comenzar</a>
         </div>
         <div class="trivia" id="trivia1">
         	<div class="preg"><img src="assets/img/preg1.png" alt="¿Qu&eacute; animal se repite en todas las producciones de Cirque Du Soleil?"/></div>
@@ -64,6 +74,13 @@
             <p class="txt_ok"><img src="assets/img/txt_ok.png" alt="Ya estás participando por una de las 100 entradas dobles a Cirque Du Soleil"/></p>
         </div>
     </div>
+
+
+    <script>
+
+
+    </script>
+
 
 </body>
 </html>
